@@ -18,7 +18,7 @@ class Sudoku:
     def getPosition(self,row,column):
         return self.array[row][column]
     
-     #Method that given a row a column and a value returns True if all the comprovations are True and change the selected value
+    #Method that given a row a column and a value returns True if all the comprovations are True and change the selected value
     def changeValue(self,row,column,value):
         if self.comZero(row,column)==True:
             if self.comRow(row,value):
